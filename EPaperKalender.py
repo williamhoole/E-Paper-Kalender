@@ -86,10 +86,10 @@ class Kalender:
         
 class Weather:
     def __init__(self):
-        self.api_key = "2cd34336b51b8349af65218615631535"
-        self.stadt = "Aalen"
-        self.long = "10.09"
-        self.lat ="48.83"
+        self.api_key = "Insert API Key from Open Weathermap"
+        self.stadt = "Enter City name"
+        self.long = "10.09" # longitude from city
+        self.lat ="48.83" # Latitude from city
         self.url = f'https://api.openweathermap.org/data/2.5/onecall?lat={self.lat}&lon={self.long}&exclude=minutely,hourly&appid={self.api_key}&units=metric'
         self.data = requests.get(self.url).json()
         self.img = Image.new("RGB",(480,200), (255,255,255))
