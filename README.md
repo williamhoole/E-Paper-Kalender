@@ -6,3 +6,5 @@ You will also have to enable SPI in raspberry Pi settings.
 
 In the EPaperKalender.py you have to insert your own API key that you can get from OpenWeathermap. 
 You also have to go to the Wetter Class and change the town, longitude and lattitude to your own.
+
+code lines 89-92
